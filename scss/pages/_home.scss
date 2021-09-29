@@ -1,0 +1,67 @@
+/*INDEX - MAIN*/
+
+
+/*INDEX SECTIONS FLEXBOX*/
+
+.flexR{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+
+}
+
+/*INDEX-NEWS section H3*/
+
+article div{                                         
+    margin-left: 1rem;
+}
+
+/*INDEX-NEWS section H4*/
+
+.aside{                                      
+    text-align:left;
+    color: white;
+    padding: 0 1rem;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2rem;
+    &__newsTitle{                                      /*INDEX-NEWS section H4*/
+        text-align:left;
+        color: white;
+        padding: 0rem;
+        font-size: 3rem;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        &__body{                                      /*INDEX-NEWS section H4*/
+            text-align:left;
+            color: white;
+            padding: 0rem;
+            font-size: 1.7rem;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0rem;
+        }
+    }
+}
+
+/*INDEX ARCTICLES BOX*/
+
+.simpleBox{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+/*INDEX IMAGE STYLES*/
+
+.indexImgs{
+    margin-left: 40px;
+    width: 550px;
+    height: 550px;
+}
+
+.indexImgsBorder{
+    margin-left: 40px;
+    width: 550px;
+    height: 550px;
+    border: white solid 4px;
+}
+

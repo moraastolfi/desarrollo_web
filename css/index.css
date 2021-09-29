@@ -1,0 +1,383 @@
+/* IMPORTS */
+/* GLOBALS */
+/*NORMALIZE*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*FONTS*/
+/*VARS*/
+/*MARGINS*/
+.topMarginForMain {
+  margin-top: 3rem; }
+
+.leftMarginForMain {
+  margin-left: 3rem; }
+
+/*BACKGROUND*/
+body {
+  background-color: black; }
+
+/* GLOBAL TEXT STYLES */
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-decoration: none; }
+
+p {
+  color: white;
+  padding: 1rem; }
+
+h1 {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Bebas Neue';
+  font-size: 4em;
+  padding: 1rem; }
+
+main h2 {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'Bebas Neue';
+  font-size: 4em;
+  padding: 1rem; }
+
+h3 {
+  color: white; }
+
+form {
+  color: white; }
+
+/*GENERAL STYLES*/
+.main {
+  max-width: 1024px;
+  display: block; }
+
+.margins {
+  margin-left: 1rem; }
+
+/* VARIABLES */
+/*COLORS*/
+/*SPACING*/
+/* PARTIALS */
+/* HEADER*/
+header {
+  height: 20vh; }
+
+header div {
+  width: inherit;
+  height: inherit; }
+
+/*NAV LOGO*/
+header a img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/*NAV style*/
+.navBar {
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  height: inherit; }
+  .navBar__menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-flow: row nowrap;
+    width: inherit;
+    height: inherit;
+    align-items: flex-end; }
+    .navBar__menu__item {
+      display: inline-block;
+      width: 23%; }
+      .navBar__menu__item__link {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding: 0.5rem 10rem;
+        position: relative;
+        font-family: 'Bebas Neue';
+        color: white;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        letter-spacing: 3px; }
+        .navBar__menu__item__link:hover {
+          color: #a5a1a1; }
+
+header div nav ul li:hover ul {
+  display: block; }
+
+.navBar__menu__item__submenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  display: none; }
+
+.navBar__menu__item__submenu__item {
+  display: block;
+  font-size: 65%;
+  position: relative;
+  margin: 0rem; }
+
+.navBar__menu__submenu__item__link {
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-left: 8rem;
+  padding: 0.5rem;
+  position: relative;
+  font-family: 'Bebas Neue';
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.2em;
+  text-align: center;
+  letter-spacing: 3px; }
+
+.navBar__menu__submenu__item__link:hover {
+  display: block;
+  color: #a5a1a1;
+  background-color: orangered; }
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem; }
+
+/*SOUNDCLOUD LOGO STYLES*/
+.logoSCloud {
+  margin-bottom: 0px;
+  margin-left: 5px;
+  height: 20px; }
+
+.copyright {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  margin: 1rem 0rem; }
+
+/* PAGES */
+/*INDEX - MAIN*/
+/*INDEX SECTIONS FLEXBOX*/
+.flexR {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end; }
+
+/*INDEX-NEWS section H3*/
+article div {
+  margin-left: 1rem; }
+
+/*INDEX-NEWS section H4*/
+.aside {
+  text-align: left;
+  color: white;
+  padding: 0 1rem;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 2rem; }
+  .aside__newsTitle {
+    /*INDEX-NEWS section H4*/
+    text-align: left;
+    color: white;
+    padding: 0rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif; }
+    .aside__newsTitle__body {
+      /*INDEX-NEWS section H4*/
+      text-align: left;
+      color: white;
+      padding: 0rem;
+      font-size: 1.7rem;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0rem; }
+
+/*INDEX ARCTICLES BOX*/
+.simpleBox {
+  width: 100%;
+  padding: 0.5rem; }
+
+/*INDEX IMAGE STYLES*/
+.indexImgs {
+  margin-left: 40px;
+  width: 550px;
+  height: 550px; }
+
+.indexImgsBorder {
+  margin-left: 40px;
+  width: 550px;
+  height: 550px;
+  border: white solid 4px; }
+
+/*CONTACT page bckg*/
+main#contactBckg {
+  background-image: url(../public/SD08.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+/*EVENTS IMAGE STYLES*/
+.gallery {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 600px 600px;
+  gap: 2rem; }
+  .gallery__imgs--1 {
+    background-image: url("../public/SD1.jpg");
+    background-size: cover;
+    width: 600px;
+    padding-bottom: 3rem;
+    margin-left: 1.5rem;
+    position: relative; }
+  .gallery__imgs--2 {
+    background-image: url("../public/SD2.jpg");
+    background-size: cover;
+    width: 600px;
+    padding-bottom: 3rem;
+    margin-left: 1.5rem;
+    position: relative; }
+  .gallery__imgs--3 {
+    background-image: url("../public/SD3.jpg");
+    background-size: cover;
+    width: 600px;
+    padding-bottom: 3rem;
+    margin-left: 1.5rem;
+    position: relative; }
+  .gallery__imgs--4 {
+    background-image: url("../public/SD4.jpg");
+    background-size: cover;
+    width: 600px;
+    padding-bottom: 3rem;
+    margin-left: 1.5rem;
+    position: relative; }
+  .gallery__transparency {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    cursor: pointer;
+    transition: 0.5s;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px; }
+
+/*
+.imgsEvents{
+    width: 600px;
+    padding-bottom: 6rem;
+    margin-left: 2rem;
+    
+}
+*/
+/*BANNER*/
+.customHeight {
+  height: 85vh; }
+
+/*MERCH GRID*/
+.gridMerch {
+  display: grid;
+  grid-template-areas: "img img img info" ". . . form" "img1 img2 img3 sChart";
+  grid-template-columns: 135px 135px 135px auto;
+  grid-template-rows: auto 10% auto;
+  gap: 1rem; }
+
+.leftfMarginsMerch {
+  margin-left: 10rem; }
+
+/* TABLE STYLE*/
+.sizeChart {
+  margin: 2rem;
+  padding-left: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.3em;
+  font-weight: bold;
+  grid-area: sChart; }
+
+.shirtInfo {
+  color: white;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.4em;
+  justify-content: center;
+  margin-left: 3rem;
+  grid-area: info; }
+
+.shirtForm {
+  color: white;
+  font-size: 1.3em;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  margin-left: 3rem;
+  grid-area: form; }
+
+table {
+  border-collapse: collapse;
+  list-style-position: inside;
+  margin-left: 3rem;
+  margin-top: 2.5rem;
+  grid-area: sChart;
+  font-size: 1.2rem;
+  max-width: 400px; }
+  table > th, table tr {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em; }
+
+.merchSectionBackground {
+  background-color: orangered; }
+
+/*MERCH IMAGE STYLES*/
+.merchImg {
+  width: 400px;
+  height: 500px;
+  grid-area: img;
+  cursor: pointer;
+  transition: all 0.5s; }
+
+.merchImg2 {
+  width: 110px;
+  height: 150px;
+  cursor: pointer; }
+
+.img1 {
+  /*merch mini images (x3)*/
+  grid-area: img1;
+  justify-self: left;
+  transition: all 0.5s; }
+
+.img2 {
+  grid-area: img2;
+  justify-self: left;
+  transition: all 0.5s; }
+
+.img3 {
+  grid-area: img3;
+  justify-self: left;
+  transition: all 0.5s; }
+
+main div section div img:hover {
+  transform: scale(1.3, 1.3); }

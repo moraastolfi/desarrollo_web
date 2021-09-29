@@ -1,0 +1,90 @@
+
+/*NORMALIZE*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*VARS*/
+$topMargin: 3rem;
+$leftMargin: 3rem;
+    
+/*MARGINS*/
+.topMarginForMain{
+    margin-top: $topMargin;
+}
+
+.leftMarginForMain{
+    margin-left: $leftMargin;
+}
+
+
+/*BACKGROUND*/
+
+body{
+    background-color: black;    
+}
+
+/* GLOBAL TEXT STYLES */
+
+html{                                                           
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    font-style: normal;
+    letter-spacing: 0.5px ;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+p{
+    color: white;
+    padding: 1rem;
+}
+
+h1{
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-family:  'Bebas Neue';
+    font-size: 4em;
+    padding: 1rem;
+
+}
+
+main{
+    h2{
+        color: white;
+        font-style: normal;
+        font-weight: bold;
+        font-family: 'Bebas Neue';
+        font-size: 4em;
+        padding: 1rem;
+    }
+}
+
+h3{
+    color: white;                   
+}
+
+
+form{
+    color:white;
+}
+
+/*GENERAL STYLES*/
+
+.main{
+    max-width:1024px;
+    display: block;
+}
+
+.margins{
+    margin-left: 1rem;
+}

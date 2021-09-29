@@ -1,0 +1,123 @@
+
+
+/* HEADER*/
+
+header{                                                       
+    height: 20vh;
+}
+    
+
+header{
+    div{
+        width:inherit;
+        height:inherit;
+    }
+}
+
+/*NAV LOGO*/
+
+header {
+    a{
+        img{                                        
+        max-width: 100px;
+        max-height:100px;
+        margin-left: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+    } 
+}
+
+
+/*NAV style*/
+
+.navBar{
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    height: inherit;
+    &__menu{
+        list-style-type: none;
+        display:flex;
+        flex-direction: row;
+        position: relative;
+        flex-flow: row nowrap;
+        width: inherit;
+        height: inherit;
+        align-items: flex-end;
+        &__item{                                           
+            display:inline-block;
+            width: 23%; 
+            &__link{                                         
+                display:inline-block;
+                text-decoration: none;
+                text-transform: capitalize;
+                margin-right: 1rem;
+                margin-left: 1rem;
+                padding: 0.5rem 10rem;
+                position: relative;
+                font-family: 'Bebas Neue';
+                color: white;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 3em;
+                text-align: center;
+                letter-spacing: 3px;
+                &:hover{
+                    color: rgb(165, 161, 161);  
+                }
+            }
+        }
+    }
+}    
+
+header div nav ul li:hover ul{
+    display: block;
+}
+
+.navBar__menu__item__submenu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.navBar__menu__item__submenu__item{
+    display:block;
+    font-size: 65%;
+    position: relative;
+    margin:0rem;
+       
+}
+
+.navBar__menu__submenu__item__link{
+    
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 8rem;
+    padding: 0.5rem;
+    position: relative;
+    font-family: 'Bebas Neue';
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.2em;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.navBar__menu__submenu__item__link:hover{
+    display: block;
+    color: rgb(165, 161, 161);
+    background-color: orangered;
+}
+
+
+.box{
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+}
+
+

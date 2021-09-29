@@ -1,0 +1,105 @@
+/*MERCH GRID*/
+.gridMerch{                                                           
+    display: grid;
+    grid-template-areas: 
+        "img img img info"
+        ". . . form"
+        "img1 img2 img3 sChart";
+    grid-template-columns: 135px 135px 135px auto;
+    grid-template-rows: auto 10% auto;
+    gap: 1rem;
+}
+
+.leftfMarginsMerch{
+    margin-left: 10rem;
+}
+/* TABLE STYLE*/
+.sizeChart{
+    margin: 2rem;
+    padding-left: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    letter-spacing:0.3em;
+    font-weight: bold;
+    grid-area:sChart;
+}
+
+.shirtInfo{
+    color: white;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+    justify-content: center;    
+    margin-left: 3rem;
+    grid-area: info;
+
+}
+
+.shirtForm{
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:0.1em;
+    font-weight: bold;    
+    margin-left: 3rem;
+    grid-area: form;
+}
+
+table{
+    border-collapse: collapse;
+    list-style-position: inside;
+    margin-left: 3rem;
+    margin-top: 2.5rem;
+    grid-area:sChart;
+    font-size: 1.2rem;
+    max-width: 400px;
+    & > th,tr{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9em;
+    }
+}
+
+.merchSectionBackground{
+    background-color: orangered;
+}
+
+/*MERCH IMAGE STYLES*/
+
+.merchImg{
+    width: 400px;
+    height: 500px;
+    grid-area: img;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.merchImg2{
+    width: 110px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.img1 {                                        /*merch mini images (x3)*/
+    grid-area:img1;
+    justify-self:left;
+    transition: all 0.5s;
+}
+
+.img2 {
+    grid-area:img2;
+    justify-self: left;
+    transition: all 0.5s;
+}
+
+.img3 {
+    grid-area:img3;
+    justify-self: left;
+    transition: all 0.5s;
+}
+
+main div section div img:hover{
+    transform: scale(1.3, 1.3);
+
+}
